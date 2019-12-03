@@ -5,7 +5,7 @@
 
 ## Usage
 
-You can so something stupid like this to deploy the container image to a kubernetes cluster and then `exec` in to run commands interactively.
+You can do something stupid like this to deploy the container image to a kubernetes cluster and then `exec` in to run commands interactively.
 
 ```
 $ kubectl run --generator=run-pod/v1 toolbox --image=jmsearcy/twrtools --command -- sleep 360000
