@@ -1,3 +1,4 @@
+[![Latest release](https://img.shields.io/github/release/phenixblue/twrtools.svg)](https://github.com/phenixblue/twrtools/releases/latest)
 [![image-build](https://github.com/phenixblue/twrtools/actions/workflows/ci-image-build-push.yaml/badge.svg)](https://github.com/phenixblue/twrtools/actions/workflows/ci-image-build-push.yaml)
 
 # twrtools 
