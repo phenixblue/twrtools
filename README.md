@@ -1,4 +1,6 @@
-# twrtools
+[![image-build](https://github.com/phenixblue/twrtools/actions/workflows/ci-image-build-push.yaml/badge.svg)](https://github.com/phenixblue/twrtools/actions/workflows/ci-image-build-push.yaml)
+
+# twrtools 
 
 `twrtools` is a container image that can be used to troubleshoot things in a kubernetes world. Run standalone to troubleshoot general connectivity or run as a sidecar to another container to provide additional tooling.
 
