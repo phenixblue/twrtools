@@ -1,6 +1,0 @@
-version: '3'
-
-services:
-  app:
-    build: .
-    image: jmsearcy/twrtools:1.1
