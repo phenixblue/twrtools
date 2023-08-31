@@ -7,14 +7,12 @@ on:
 
 # Variables to be used throughout the workflow manifest
 env:
-  # TO-DO (@phenixblue): Need to investigate more into why the `linux/ppc64le` 
-  # platform has issues with installing Python dependencies during image build.
-  #
-  # Removing for now to not block
-  TARGET_PLATFORMS: linux/amd64,linux/arm64
+  # TO-DO (@phenixblue): Need to investigate more into why other platforms
+  # Seem to push build times into 30min or more.
+  TARGET_PLATFORMS: linux/amd64
 jobs:
 
-  # Build and push imageswap-init container image
+  # Build and push TWR Tools container image
   build-and-push-image:
     name: Build and push TWR Tools image to DockerHub
     runs-on: ubuntu-latest
@@ -46,7 +44,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-      - name: Build and push imageswap-init image to DockerHub
+      - name: Build and push TWR Tools image to DockerHub
         if: github.repository == 'phenixblue/twrtools'
         timeout-minutes: 30
         uses: docker/build-push-action@v2
